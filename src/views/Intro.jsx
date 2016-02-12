@@ -14,7 +14,7 @@ export class Intro extends React.Component {
   render () {
     return (
       <div>
-        <Link to='todomvc'><h1>Check out the built-in todo app!</h1></Link>
+        <Link to='todomvc'>Check out the built-in todo app!</Link>
         <h1>Welcome to react-starter-kit!</h1>
         <img className='duck' src={DuckImage} alt='Redux duck' />
         <img className='duck' src={DuckImage} alt='Redux duck' />

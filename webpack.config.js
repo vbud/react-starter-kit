@@ -121,7 +121,8 @@ webpackConfig.module.loaders = [{
     cacheDirectory: true,
     presets: __DEV__
       ? ['es2015', 'react', 'stage-0', 'react-hmre'].map(resolveBabelPreset)
-      : ['es2015', 'react', 'stage-0'].map(resolveBabelPreset)
+      : ['es2015', 'react', 'stage-0'].map(resolveBabelPreset),
+    plugins: ['transform-runtime']
   }
 },
 {

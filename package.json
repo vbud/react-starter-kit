@@ -18,9 +18,11 @@
     "dev:debug-window": "npm run dev -- --debug-window",
     "dev:no-debug": "npm run dev -- --no-debug",
     "test": "better-npm-run test",
+    "test:debug": "better-npm-run test -- --tests-debug",
     "test:no-coverage": "npm run test -- --no-coverage",
-    "tdd": "npm run test -- --watch",
-    "tdd:no-coverage": "npm run test -- --watch --no-coverage",
+    "test:no-coverage:test-debug": "better-npm-run test -- --no-coverage --tests-debug",
+    "tdd": "better-npm-run test -- --watch",
+    "tdd:no-coverage": "better-npm-run test -- --watch --no-coverage",
     "build": "better-npm-run build"
   },
   "betterScripts": {
@@ -106,7 +108,7 @@
     "imports-loader": "^0.6.5",
     "isparta-loader": "^2.0.0",
     "json-loader": "^0.5.4",
-    "karma": "^0.13.8",
+    "karma": "0.13.19",
     "karma-coverage": "^0.5.0",
     "karma-mocha": "^0.2.0",
     "karma-phantomjs-launcher": "^1.0.0",

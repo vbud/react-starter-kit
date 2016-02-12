@@ -3,7 +3,6 @@ import config from './config'
 import webpackConfig from './webpack.config'
 import _debug from 'debug'
 
-const argv = yargs.argv
 const debug = _debug('app:karma')
 debug('Create configuration.')
 
@@ -22,8 +21,7 @@ const karmaConfig = {
       included: true
     }
   ],
-  // logLevel: 'LOG_DEBUG',
-  singleRun: !argv.watch,
+  singleRun: !config.tests_watch,
   frameworks: ['mocha'],
   preprocessors: {
     [`${config.dir_test}/test-bundler.js`]: ['webpack', 'sourcemap']
@@ -65,6 +63,10 @@ const karmaConfig = {
   coverageReporter: {
     reporters: config.coverage_reporters
   }
+}
+
+if (config.tests_debug) {
+  karmaConfig.logLevel = 'LOG_DEBUG'
 }
 
 if (config.coverage_enabled) {

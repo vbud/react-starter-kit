@@ -7,6 +7,8 @@ const options = Object.assign({
   debug: true,
   coverage: true,
   'debug-window': false,
+  'tests-debug': false,
+  watch: false
 }, argv)
 const debug = _debug('app:config:_base')
 const config = {
