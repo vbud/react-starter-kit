@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react'
 import classnames from 'classnames'
-import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from './TodoFilters.constants'
+import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/todoFilters.constants.js'
 import '../views/Todos.scss'
 
 const FILTER_TITLES = {

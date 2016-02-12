@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import TodoItem from './TodoItem'
 import TodosFooter from './TodosFooter'
-import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from './TodoFilters.constants'
+import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/todoFilters.constants.js'
 import '../views/Todos.scss'
 
 const TODO_FILTERS = {
