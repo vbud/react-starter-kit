@@ -134,7 +134,7 @@ webpackConfig.module.loaders.push({
   test: /\.scss$/,
   loaders: [
     'style',
-    'css?sourceMap',
+    'css?sourceMap&-minimize',
     'postcss',
     'sass?sourceMap'
   ]
@@ -144,7 +144,7 @@ webpackConfig.module.loaders.push({
   test: /\.css$/,
   loaders: [
     'style',
-    'css?sourceMap',
+    'css?sourceMap&-minimize',
     'postcss'
   ]
 })
