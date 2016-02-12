@@ -2,7 +2,6 @@ import React from 'react'
 import TestUtils from 'react-addons-test-utils'
 import { bindActionCreators } from 'redux'
 import { Intro } from 'views/Intro'
-import styles from 'views/Intro.scss'
 
 function shallowRender (component) {
   const renderer = TestUtils.createRenderer()
@@ -87,7 +86,7 @@ describe('(View) StarterKitIntro', function () {
 
   it('render props.counter at the end of the sample counter <p>.', function () {
     const sampleCounter = TestUtils.scryRenderedDOMComponentsWithClass(
-      renderWithProps({ ..._props, counter: 5 }), styles['sample-counter']
+      renderWithProps({ ..._props, counter: 5 }), 'sample-counter'
     )[0]
 
     expect(sampleCounter).to.exist
