@@ -18,11 +18,11 @@
     "dev:debug-window": "npm run dev -- --debug-window",
     "dev:no-debug": "npm run dev -- --no-debug",
     "test": "better-npm-run test",
-    "test:debug": "better-npm-run test -- --tests-debug",
+    "test:debug": "npm run test -- --tests-debug",
     "test:no-coverage": "npm run test -- --no-coverage",
-    "test:no-coverage:test-debug": "better-npm-run test -- --no-coverage --tests-debug",
-    "tdd": "better-npm-run test -- --watch",
-    "tdd:no-coverage": "better-npm-run test -- --watch --no-coverage",
+    "test:no-coverage:test-debug": "npm run test -- --no-coverage --tests-debug",
+    "tdd": "npm run test -- --watch",
+    "tdd:no-coverage": "npm run test -- --watch --no-coverage",
     "build": "better-npm-run build"
   },
   "betterScripts": {
