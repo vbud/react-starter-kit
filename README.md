@@ -10,7 +10,7 @@ Getting Started
 2. `git clone https://github.com/[org]/[project name]`
 3. `cd [project name]`
 4. Delete the contents of README.md and replace with your own.
-5. Open package.json and do a find/replace of `newr-ui-starter-kit` with [project name].
+5. Open package.json and do a find/replace of `react-starter-kit` with [project name].
 6. Install dependencies
   ```
   npm install
