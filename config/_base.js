@@ -60,7 +60,8 @@ const config = {
   coverage_reporters: [
     { type: 'text-summary' },
     { type: 'html', dir: 'coverage' }
-  ]
+  ],
+  tests_watch: options.watch
 }
 
 // ------------------------------------
